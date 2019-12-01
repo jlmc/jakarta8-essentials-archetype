@@ -1,0 +1,60 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>io.costax</groupId>
+    <artifactId>jakarta8-essentials-archetype</artifactId>
+    <version>0.0.1</version>
+    <name>javaee8-essentials-archetype</name>
+    <description>Jakarta8 EE 8 project quickstart template. Clean, lean and minimalistic.</description>
+    <url>http://costajlmpp.wordpress.com</url>
+    <organization>
+        <name>Joao Costa</name>
+        <url>http://costajlmpp.wordpress.com</url>
+    </organization>
+    <inceptionYear>2017</inceptionYear>
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    <developers>
+        <developer>
+            <name>Joao Costa</name>
+            <organization>costajlmpp.wordpress.com</organization>
+            <organizationUrl>http://costajlmpp.wordpress.com</organizationUrl>
+        </developer>
+    </developers>
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <failOnMissingWebXml>false</failOnMissingWebXml>
+    </properties>
+    <packaging>maven-archetype</packaging>
+    <build>
+    	<extensions>
+            <extension>
+                <groupId>org.apache.maven.archetype</groupId>
+                <artifactId>archetype-packaging</artifactId>
+                <version>2.3</version>
+            </extension>
+        </extensions>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <artifactId>maven-archetype-plugin</artifactId>
+                    <version>2.3</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+
+    </build>
+
+    <scm>
+        <connection>scm:git:git@github.com:jlmc/jakarta8-essentials-archetype.git</connection>
+        <url>scm:git:git@github.com:jlmc/jakarta8-essentials-archetype.git</url>
+        <developerConnection>scm:git:git@github.com:jlmc/jakarta8-essentials-archetype.git</developerConnection>
+        <tag>0.0.1</tag>
+    </scm>
+</project>

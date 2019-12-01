@@ -1,0 +1,25 @@
+
+<!--
+an archetype descriptor (archetype.xml in directory: src/main/resources/META-INF/maven/). It lists all the files that will be contained in the archetype and categorizes them so they can be processed correctly by the archetype generation mechanism.
+-->
+
+<archetype xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype/1.0.0 http://maven.apache.org/xsd/archetype-1.0.0.xsd">
+  <id>javaee8-essentials-archetype</id>
+  <allowPartial>true</allowPartial>
+
+  <sources>
+    <source>src/main/java/*.*</source>
+  </sources>
+  <resources>
+  	<source>src/main/resources/*.*</source>
+  	<source>src/main/webapp/*.*</source>
+  </resources>
+
+  <testSources>
+    <source>src/test/java/*.j*</source>
+  </testSources>
+  <testResources>
+  	<source>src/test/resources/*.*</source>
+  </testResources>
+</archetype>
